@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="你好 上海, 生活,编程,阅读,音乐,电影">
+    <meta name="keywords" content="GO - Time, 生活,编程,阅读,音乐,电影">
     <meta name="description" content="铭记过去，拥抱未来，心中有梦，眼里有光">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>你好 上海 | Duanyude</title>
+    <title>GO - Time | Duanyude</title>
     <link rel="icon" type="image/png" href="/blog/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/blog/libs/awesome/css/all.css">
@@ -289,12 +289,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/blog/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/blog/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">你好 上海</h1>
+                    <h1 class="description center-align post-title">GO - Time</h1>
                 </div>
             </div>
         </div>
@@ -408,12 +408,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/blog/tags/Context/">
+                                <span class="chip bg-color">Context</span>
+                            </a>
+                        
+                            <a href="/blog/tags/GO/">
+                                <span class="chip bg-color">GO</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/blog/categories/Go/" class="post-category">
+                                Go
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -431,7 +448,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    159
                 </div>
                 
 
@@ -458,15 +475,44 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h1 id="Go-time"><a href="#Go-time" class="headerlink" title="Go-time"></a>Go-time</h1><h2 id="time-Timer"><a href="#time-Timer" class="headerlink" title="time-Timer"></a>time-Timer</h2><pre class=" language-go"><code class="language-go">
+<span class="token comment" spellcheck="true">//暂停当前goroutine</span>
+<span class="token keyword">func</span> <span class="token function">Sleep</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">//定时器</span>
+<span class="token keyword">type</span> Timer <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    C <span class="token operator">&lt;-</span><span class="token keyword">chan</span> Time
+    r runtimeTimer
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//暂停timer</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>t <span class="token operator">*</span>Timer<span class="token punctuation">)</span> <span class="token function">Stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//暂停定时器，并且重新开始一个新的定时器</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>t <span class="token operator">*</span>Timer<span class="token punctuation">)</span> <span class="token function">Reset</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">//快速创建timer</span>
+<span class="token keyword">func</span> <span class="token function">NewTimer</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token operator">*</span>Timer <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">After</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token operator">&lt;-</span><span class="token keyword">chan</span> Time <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">AfterFunc</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">,</span> f <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">*</span>Timer <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">//开启协程，执行函数</span>
+<span class="token keyword">func</span> <span class="token function">goFunc</span><span class="token punctuation">(</span>arg <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> seq <span class="token builtin">uintptr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//定时器默认方法；发送当前时间到 channel</span>
+<span class="token keyword">func</span> <span class="token function">sendTime</span><span class="token punctuation">(</span>c <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> seq <span class="token builtin">uintptr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
+<h2 id="time-Ticker"><a href="#time-Ticker" class="headerlink" title="time-Ticker"></a>time-Ticker</h2><pre class=" language-go"><code class="language-go"><span class="token comment" spellcheck="true">//</span>
+<span class="token keyword">type</span> Ticker <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    C <span class="token operator">&lt;-</span><span class="token keyword">chan</span> Time <span class="token comment" spellcheck="true">// The channel on which the ticks are delivered.</span>
+    r runtimeTimer
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//暂停ticker</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>t <span class="token operator">*</span>Ticker<span class="token punctuation">)</span> <span class="token function">Stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//快速创建ticker</span>
+<span class="token keyword">func</span> <span class="token function">NewTicker</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token operator">*</span>Ticker <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">Tick</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token operator">&lt;-</span><span class="token keyword">chan</span> Time <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
 
                 
             </div>
@@ -493,7 +539,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://www.duanyude.com/blog/2020/12/08/ni-hao-zhong-guo/">http://www.duanyude.com/blog/2020/12/08/ni-hao-zhong-guo/</a>
+                    <a href="http://www.duanyude.com/blog/2020/12/08/go-time/">http://www.duanyude.com/blog/2020/12/08/go-time/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -530,7 +576,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/blog/tags/Context/">
+                                    <span class="chip bg-color">Context</span>
+                                </a>
+                            
+                                <a href="/blog/tags/GO/">
+                                    <span class="chip bg-color">GO</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -573,7 +627,7 @@
         repo: 'Blog',
         owner: 'he7009',
         admin: ["he7009"],
-        id: '2020-12-08T15-01-43',
+        id: '2020-12-08T23-02-10',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -604,19 +658,19 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/blog/2020/12/08/ni-hao-zhong-guo/">
+                <a href="/blog/2020/12/08/go-time/">
                     <div class="card-image">
                         
                         
-                        <img src="/blog/medias/featureimages/0.jpg" class="responsive-img" alt="你好 上海">
+                        <img src="/blog/medias/featureimages/8.jpg" class="responsive-img" alt="GO - Time">
                         
-                        <span class="card-title">你好 上海</span>
+                        <span class="card-title">GO - Time</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            GO Time 包相关操作；包括 GO-Timer、GO-Ticker 等
                         
                     </div>
                     <div class="publish-info">
@@ -625,13 +679,29 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Duan Yude
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/blog/categories/Go/" class="post-category">
+                                    Go
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/blog/tags/Context/">
+                        <span class="chip bg-color">Context</span>
+                    </a>
+                    
+                    <a href="/blog/tags/GO/">
+                        <span class="chip bg-color">GO</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -654,7 +724,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我只是一个摘要，没什么重要的
+                            GO - Context 包 祝我成功
                         
                     </div>
                     <div class="publish-info">

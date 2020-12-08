@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Duanyude</title>
   
-  <subtitle>学而不思则罔，思而不学则殆</subtitle>
+  <subtitle>我是段育德，我爱学习</subtitle>
   <link href="http://www.duanyude.com/atom.xml" rel="self"/>
   
   <link href="http://www.duanyude.com/"/>
-  <updated>2020-12-08T07:01:43.005Z</updated>
+  <updated>2020-12-08T15:04:02.548Z</updated>
   <id>http://www.duanyude.com/</id>
   
   <author>
@@ -17,23 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>你好 上海</title>
-    <link href="http://www.duanyude.com/2020/12/08/ni-hao-zhong-guo/"/>
-    <id>http://www.duanyude.com/2020/12/08/ni-hao-zhong-guo/</id>
-    <published>2020-12-08T07:01:43.005Z</published>
-    <updated>2020-12-08T07:01:43.005Z</updated>
+    <title>GO - Time</title>
+    <link href="http://www.duanyude.com/2020/12/08/go-time/"/>
+    <id>http://www.duanyude.com/2020/12/08/go-time/</id>
+    <published>2020-12-08T15:02:10.000Z</published>
+    <updated>2020-12-08T15:04:02.548Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Go-time&quot;&gt;&lt;a href=&quot;#Go-time&quot; class=&quot;headerlink&quot; title=&quot;Go-time&quot;&gt;&lt;/a&gt;Go-time&lt;/h1&gt;&lt;h2 id=&quot;time-Timer&quot;&gt;&lt;a href=&quot;#time-Timer&quot;</summary>
         
       
     
     
     
+    <category term="Go" scheme="http://www.duanyude.com/categories/Go/"/>
+    
+    
+    <category term="Context" scheme="http://www.duanyude.com/tags/Context/"/>
+    
+    <category term="GO" scheme="http://www.duanyude.com/tags/GO/"/>
     
   </entry>
   
@@ -42,7 +48,7 @@
     <link href="http://www.duanyude.com/2020/12/08/go-context-yuan-ma-jie-du/"/>
     <id>http://www.duanyude.com/2020/12/08/go-context-yuan-ma-jie-du/</id>
     <published>2020-12-07T16:13:10.000Z</published>
-    <updated>2020-12-08T07:01:43.005Z</updated>
+    <updated>2020-12-08T15:35:03.701Z</updated>
     
     
       
@@ -61,27 +67,6 @@
     <category term="Context" scheme="http://www.duanyude.com/tags/Context/"/>
     
     <category term="GO" scheme="http://www.duanyude.com/tags/GO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://www.duanyude.com/2020/12/07/hello-world/"/>
-    <id>http://www.duanyude.com/2020/12/07/hello-world/</id>
-    <published>2020-12-07T04:26:04.490Z</published>
-    <updated>2020-12-07T04:26:04.491Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   

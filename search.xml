@@ -4,13 +4,27 @@
   
     
     <entry>
-      <title>你好 上海</title>
-      <link href="/blog/2020/12/08/ni-hao-zhong-guo/"/>
-      <url>/blog/2020/12/08/ni-hao-zhong-guo/</url>
+      <title>GO - Time</title>
+      <link href="/blog/2020/12/08/go-time/"/>
+      <url>/blog/2020/12/08/go-time/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Go-time"><a href="#Go-time" class="headerlink" title="Go-time"></a>Go-time</h1><h2 id="time-Timer"><a href="#time-Timer" class="headerlink" title="time-Timer"></a>time-Timer</h2><pre class=" language-go"><code class="language-go"><span class="token comment" spellcheck="true">//暂停当前goroutine</span><span class="token keyword">func</span> <span class="token function">Sleep</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//定时器</span><span class="token keyword">type</span> Timer <span class="token keyword">struct</span> <span class="token punctuation">{</span>    C <span class="token operator">&lt;-</span><span class="token keyword">chan</span> Time    r runtimeTimer<span class="token punctuation">}</span><span class="token comment" spellcheck="true">//暂停timer</span><span class="token keyword">func</span> <span class="token punctuation">(</span>t <span class="token operator">*</span>Timer<span class="token punctuation">)</span> <span class="token function">Stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment" spellcheck="true">//暂停定时器，并且重新开始一个新的定时器</span><span class="token keyword">func</span> <span class="token punctuation">(</span>t <span class="token operator">*</span>Timer<span class="token punctuation">)</span> <span class="token function">Reset</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment" spellcheck="true">//快速创建timer</span><span class="token keyword">func</span> <span class="token function">NewTimer</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token operator">*</span>Timer <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token keyword">func</span> <span class="token function">After</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token operator">&lt;-</span><span class="token keyword">chan</span> Time <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token keyword">func</span> <span class="token function">AfterFunc</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">,</span> f <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">*</span>Timer <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment" spellcheck="true">//开启协程，执行函数</span><span class="token keyword">func</span> <span class="token function">goFunc</span><span class="token punctuation">(</span>arg <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> seq <span class="token builtin">uintptr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment" spellcheck="true">//定时器默认方法；发送当前时间到 channel</span><span class="token keyword">func</span> <span class="token function">sendTime</span><span class="token punctuation">(</span>c <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> seq <span class="token builtin">uintptr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre><h2 id="time-Ticker"><a href="#time-Ticker" class="headerlink" title="time-Ticker"></a>time-Ticker</h2><pre class=" language-go"><code class="language-go"><span class="token comment" spellcheck="true">//</span><span class="token keyword">type</span> Ticker <span class="token keyword">struct</span> <span class="token punctuation">{</span>    C <span class="token operator">&lt;-</span><span class="token keyword">chan</span> Time <span class="token comment" spellcheck="true">// The channel on which the ticks are delivered.</span>    r runtimeTimer<span class="token punctuation">}</span><span class="token comment" spellcheck="true">//暂停ticker</span><span class="token keyword">func</span> <span class="token punctuation">(</span>t <span class="token operator">*</span>Ticker<span class="token punctuation">)</span> <span class="token function">Stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment" spellcheck="true">//快速创建ticker</span><span class="token keyword">func</span> <span class="token function">NewTicker</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token operator">*</span>Ticker <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token keyword">func</span> <span class="token function">Tick</span><span class="token punctuation">(</span>d Duration<span class="token punctuation">)</span> <span class="token operator">&lt;-</span><span class="token keyword">chan</span> Time <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> Go </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Context </tag>
+            
+            <tag> GO </tag>
+            
+        </tags>
       
     </entry>
     
@@ -38,19 +52,6 @@
             <tag> GO </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/blog/2020/12/07/hello-world/"/>
-      <url>/blog/2020/12/07/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
