@@ -3,11 +3,11 @@
   <title>Duanyude</title>
   
   <subtitle>学而不思则罔，思而不学则殆</subtitle>
-  <link href="http://he7009.github.io/atom.xml" rel="self"/>
+  <link href="http://www.duanyude.com/atom.xml" rel="self"/>
   
-  <link href="http://he7009.github.io/"/>
+  <link href="http://www.duanyude.com/"/>
   <updated>2020-12-07T16:15:08.287Z</updated>
-  <id>http://he7009.github.io/</id>
+  <id>http://www.duanyude.com/</id>
   
   <author>
     <name>Duan Yude</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>GO - Context 源码解读</title>
-    <link href="http://he7009.github.io/2020/12/08/go-context-yuan-ma-jie-du/"/>
-    <id>http://he7009.github.io/2020/12/08/go-context-yuan-ma-jie-du/</id>
+    <link href="http://www.duanyude.com/2020/12/08/go-context-yuan-ma-jie-du/"/>
+    <id>http://www.duanyude.com/2020/12/08/go-context-yuan-ma-jie-du/</id>
     <published>2020-12-07T16:13:10.000Z</published>
     <updated>2020-12-07T16:15:08.287Z</updated>
     
@@ -34,19 +34,19 @@
     
     
     
-    <category term="Go" scheme="http://he7009.github.io/categories/Go/"/>
+    <category term="Go" scheme="http://www.duanyude.com/categories/Go/"/>
     
     
-    <category term="Context" scheme="http://he7009.github.io/tags/Context/"/>
+    <category term="Context" scheme="http://www.duanyude.com/tags/Context/"/>
     
-    <category term="GO" scheme="http://he7009.github.io/tags/GO/"/>
+    <category term="GO" scheme="http://www.duanyude.com/tags/GO/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://he7009.github.io/2020/12/07/hello-world/"/>
-    <id>http://he7009.github.io/2020/12/07/hello-world/</id>
+    <link href="http://www.duanyude.com/2020/12/07/hello-world/"/>
+    <id>http://www.duanyude.com/2020/12/07/hello-world/</id>
     <published>2020-12-07T04:26:04.490Z</published>
     <updated>2020-12-07T04:26:04.491Z</updated>
     
@@ -66,8 +66,8 @@
   
   <entry>
     <title>你好 上海</title>
-    <link href="http://he7009.github.io/2020/12/07/ni-hao-zhong-guo/"/>
-    <id>http://he7009.github.io/2020/12/07/ni-hao-zhong-guo/</id>
+    <link href="http://www.duanyude.com/2020/12/07/ni-hao-zhong-guo/"/>
+    <id>http://www.duanyude.com/2020/12/07/ni-hao-zhong-guo/</id>
     <published>2020-12-07T04:26:04.490Z</published>
     <updated>2020-12-08T03:46:07.021Z</updated>
     
