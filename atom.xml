@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>he7009</title>
+  
+  <subtitle>天行健，君子以自强不息</subtitle>
+  <link href="http://www.duanyude.com/atom.xml" rel="self"/>
+  
+  <link href="http://www.duanyude.com/"/>
+  <updated>2021-03-11T13:49:11.590Z</updated>
+  <id>http://www.duanyude.com/</id>
+  
+  <author>
+    <name>he7009</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql 配置、启动、系统变量</title>
+    <link href="http://www.duanyude.com/2021/03/11/mysql/mysql-pei-zhi-qi-dong-xi-tong-bian-liang/"/>
+    <id>http://www.duanyude.com/2021/03/11/mysql/mysql-pei-zhi-qi-dong-xi-tong-bian-liang/</id>
+    <published>2021-03-11T08:23:10.000Z</published>
+    <updated>2021-03-11T13:49:11.590Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;命令行中配置选项&quot;&gt;&lt;a href=&quot;#命令行中配置选项&quot; class=&quot;headerlink&quot; title=&quot;命令行中配置选项&quot;&gt;&lt;/a&gt;命令行中配置选项&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;命令行中配置选项分为长形式和短形式方式。例如：&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="Mysql" scheme="http://www.duanyude.com/categories/Mysql/"/>
+    
+    
+    <category term="mysql" scheme="http://www.duanyude.com/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql 用户、权限管理</title>
+    <link href="http://www.duanyude.com/2021/03/05/mysql/mysql-yong-hu-quan-xian-guan-li/"/>
+    <id>http://www.duanyude.com/2021/03/05/mysql/mysql-yong-hu-quan-xian-guan-li/</id>
+    <published>2021-03-05T09:54:10.000Z</published>
+    <updated>2021-03-11T13:49:11.590Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;创建用户&quot;&gt;&lt;a href=&quot;#创建用户&quot; class=&quot;headerlink&quot; title=&quot;创建用户&quot;&gt;&lt;/a&gt;创建用户&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-sql&quot; data-language=&quot;sql&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="Mysql" scheme="http://www.duanyude.com/categories/Mysql/"/>
+    
+    
+    <category term="mysql" scheme="http://www.duanyude.com/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux ssh免密登录配置</title>
+    <link href="http://www.duanyude.com/2021/03/04/linux/linux-ssh-mian-mi-deng-lu-pei-zhi/"/>
+    <id>http://www.duanyude.com/2021/03/04/linux/linux-ssh-mian-mi-deng-lu-pei-zhi/</id>
+    <published>2021-03-04T15:14:10.000Z</published>
+    <updated>2021-03-11T13:49:11.590Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux-ssh免密登录配置&quot;&gt;&lt;a href=&quot;#Linux-ssh免密登录配置&quot; class=&quot;headerlink&quot; title=&quot;Linux ssh免密登录配置&quot;&gt;&lt;/a&gt;Linux ssh免密登录配置&lt;/h1&gt;&lt;h2 id=&quot;原理&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="http://www.duanyude.com/categories/Linux/"/>
+    
+    
+    <category term="ssh" scheme="http://www.duanyude.com/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GO Error 处理</title>
+    <link href="http://www.duanyude.com/2020/12/10/go/go-error-chu-li/"/>
+    <id>http://www.duanyude.com/2020/12/10/go/go-error-chu-li/</id>
+    <published>2020-12-10T07:13:10.000Z</published>
+    <updated>2021-03-11T13:49:11.590Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;关于错误处理的几点理解&quot;&gt;&lt;a href=&quot;#关于错误处理的几点理解&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.duanyude.com/categories/Go/"/>
+    
+    
+    <category term="Error" scheme="http://www.duanyude.com/tags/Error/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GO - Time</title>
+    <link href="http://www.duanyude.com/2020/12/08/go/go-time/"/>
+    <id>http://www.duanyude.com/2020/12/08/go/go-time/</id>
+    <published>2020-12-08T15:02:10.000Z</published>
+    <updated>2021-03-11T13:49:11.590Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Go-time&quot;&gt;&lt;a href=&quot;#Go-time&quot; class=&quot;headerlink&quot; title=&quot;Go-time&quot;&gt;&lt;/a&gt;Go-time&lt;/h1&gt;&lt;h2 id=&quot;time-time&quot;&gt;&lt;a href=&quot;#time-time&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.duanyude.com/categories/Go/"/>
+    
+    
+    <category term="GO" scheme="http://www.duanyude.com/tags/GO/"/>
+    
+    <category term="Time" scheme="http://www.duanyude.com/tags/Time/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GO - Context 源码解读</title>
+    <link href="http://www.duanyude.com/2020/12/07/go/go-context-yuan-ma-jie-du/"/>
+    <id>http://www.duanyude.com/2020/12/07/go/go-context-yuan-ma-jie-du/</id>
+    <published>2020-12-07T15:13:10.000Z</published>
+    <updated>2021-03-11T13:49:11.590Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;GO-Context-源码解读&quot;&gt;&lt;a href=&quot;#GO-Context-源码解读&quot; class=&quot;headerlink&quot; title=&quot;GO - Context 源码解读&quot;&gt;&lt;/a&gt;GO - Context 源码解读&lt;/h1&gt;&lt;h2 id=&quot;核心接口&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="http://www.duanyude.com/categories/Go/"/>
+    
+    
+    <category term="Context" scheme="http://www.duanyude.com/tags/Context/"/>
+    
+    <category term="GO" scheme="http://www.duanyude.com/tags/GO/"/>
+    
+  </entry>
+  
+</feed>
